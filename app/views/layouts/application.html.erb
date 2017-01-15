@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+  <title>Sarah Abogabir</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+  <header id="main_navigation" class="clearfix">
+		<a href="#" class="name">Sarah Abogabir </a>
+		<nav>
+      <%= link_to "Articles", posts_path %>
+      <a href="articles">Projects</a>
+      <a href="articles">Contact</a>
+		</nav>
+	</header>
 
-</body>
-</html>
+  <footer id="main_footer">
+  		<p class="copyright">&copy;2016 Sarah Abogabir</p>
+  		<nav>
+        <a href="http://github.com/sarahabogabir1" target="_blank"><i class="fa fa-github"></i></a>
+  			<a href="http://twitter.com/sarahabogabir" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="http://github.com/sarahabogabir1" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="http://github.com/sarahabogabir1" target="_blank"><i class="fa fa-instagram"></i></a>
+  		</nav>
+  	</footer>
+
+  </body>
+  </html>
