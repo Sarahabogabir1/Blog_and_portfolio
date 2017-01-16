@@ -1,0 +1,18 @@
+/*
+ we purposefully remove the 'require_tree .' and 'require_self' statements here in favor
+ of scss import directives
+*/
+
+/* "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables" */
+
+
+$dark: #424652;
+$white: #FFFFFF;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+
+ @import "normalize";
+ @import "welcome";
+ @import "post_projects";
+ @import "general_styles";

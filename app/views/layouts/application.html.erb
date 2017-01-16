@@ -12,7 +12,7 @@
 <body>
 
   <header id="main_navigation" class="clearfix">
-		<a href="#" class="name">Sarah Abogabir </a>
+    <%= link_to "Sarah Abogabir", root_path, class:"name" %>
 		<nav>
       <%= link_to "Articles", posts_path %>
       <a href="articles">Projects</a>
@@ -20,15 +20,19 @@
 		</nav>
 	</header>
 
+  <!-- All content from other views renders below -->
+  <%= yield %>
+
   <footer id="main_footer">
-  		<p class="copyright">&copy;2016 Sarah Abogabir</p>
+  		<p class="copyright">&copy;2017 Sarah Abogabir</p>
   		<nav>
         <a href="http://github.com/sarahabogabir1" target="_blank"><i class="fa fa-github"></i></a>
   			<a href="http://twitter.com/sarahabogabir" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="http://github.com/sarahabogabir1" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="http://github.com/sarahabogabir1" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/sarahabogabir" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/sarahabogabir" target="_blank"><i class="fa fa-instagram"></i></a>
   		</nav>
   	</footer>
+
 
   </body>
   </html>
