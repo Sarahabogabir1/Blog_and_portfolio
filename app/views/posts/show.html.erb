@@ -7,7 +7,8 @@
 	</header>
 
   <div id="content">
-     <%= @post.content %>
+		<!-- markdown is calling the application_helper -->
+     <%= markdown @post.content %>
   </div>
 
 <br>
