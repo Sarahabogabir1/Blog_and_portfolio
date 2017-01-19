@@ -45,7 +45,7 @@ class PostsController < ApplicationController
   private
     def post_params
       #these are the attributes from the posts table
-      params.require(:post).permit(:title, :content)
+      params.require(:post).permit(:title, :content, :slug)
     end
 
     def find_post
