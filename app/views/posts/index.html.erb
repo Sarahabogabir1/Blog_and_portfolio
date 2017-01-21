@@ -1,5 +1,4 @@
 <h1 id="page_title">My thoughts</h1>
-<p> Below you will find a list of my posts </p>
 
 <div id="posts_wrapper" class="skinny_wrapper">
 	<% @posts.each do |post| %>
@@ -10,3 +9,5 @@
 		</div>
 	<% end %>
 </div>
+
+<%= will_paginate @posts %>
