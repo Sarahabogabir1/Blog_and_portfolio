@@ -28,11 +28,6 @@ class PostsController < ApplicationController
       #will allow us to edit the post
     end
 
-    def destroy
-      @post.destroy
-      redirect_to posts_path
-    end
-
     def update
       if @post.update post_params
         redirect_to @post, notice: "YAY, article Saved!"
@@ -41,14 +36,18 @@ class PostsController < ApplicationController
       end
     end
 
+    def destroy
+      @post.destroy
+      redirect_to posts_path
+    end
 
   private
+
     def post_params
-      #these are the attributes from the posts table
       params.require(:post).permit(:title, :content, :slug)
     end
 
     def find_post
-      @post = Post.find(params[:id])
+      @post = Post.friendly.find(params[:id])
     end
 end
