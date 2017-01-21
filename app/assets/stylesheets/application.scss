@@ -5,15 +5,16 @@
 
 /* "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables" */
 
-
 $dark: #424652;
 $white: #FFFFFF;
 $light: #9a9da4;
 $highlight: #8bc6db;
 $border: #E9E9E9;
 
- @import "normalize";
- @import "general_styles";
- @import "welcome";
- @import "post_projects";
- @import "pygments";
+
+// @import "normalize";
+@import "welcome";
+// @import "post_projects";
+@import "pygments";
+@import "general_styles";
+// @import "bootstrap";
