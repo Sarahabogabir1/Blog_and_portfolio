@@ -15,7 +15,9 @@ gem 'pygments.rb', '~> 0.6.0'
 gem 'redcarpet', '~> 3.2.2'
 gem 'friendly_id', '~> 5.1'
 gem 'will_paginate', '~>3.0.7'
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass', '~> 4.7.0'
 
 group :development, :test do
   gem 'byebug'

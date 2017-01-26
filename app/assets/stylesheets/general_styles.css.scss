@@ -79,7 +79,7 @@ h6 {
 }
 
 p, li {
-	font-size: 1.1rem;
+	font-size: 1.4rem;
 	line-height: 1.75;
 }
 
@@ -101,7 +101,7 @@ hr {
 	border-bottom: 1px solid $border;
 	.name {
 		font-weight: 700;
-		font-size: .8em;
+		font-size: 1.2em;
 		letter-spacing: 4px;
 		text-transform: uppercase;
 		border: 2px solid $border;
@@ -112,12 +112,12 @@ hr {
 	}
 	nav {
 		float: right;
-		padding-top: 1.5rem;
+		padding-top: 1.9rem;
 		a {
 			color: $dark;
 			text-decoration: none;
 			margin: 0 1rem;
-			font-size: 1rem;
+			font-size: 1.4rem;
 		}
 	}
 }

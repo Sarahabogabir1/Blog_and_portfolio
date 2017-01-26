@@ -11,10 +11,15 @@ $light: #9a9da4;
 $highlight: #8bc6db;
 $border: #E9E9E9;
 
-
+@import "bootstrap-sprockets";
 // @import "normalize";
-@import "welcome";
 // @import "post_projects";
-@import "pygments";
+// @import "pygments";
+
+@import "bootstrap";
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+@import "welcome";
 @import "general_styles";
-// @import "bootstrap";
