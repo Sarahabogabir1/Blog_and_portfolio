@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
   get 'welcome/index'
     root 'welcome#index' #settig the action to the welcome controller
+  # This below will redirect the user to the home page if the route is wrong.
+  get '*path' => redirect('/')
 end
