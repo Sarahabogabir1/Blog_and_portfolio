@@ -25,6 +25,9 @@
       <%= link_to "Articles", posts_path %>
       <%= link_to "Projects", projects_path %>
       <%= link_to "Contact", contacts_path %>
+      <% if user_signed_in? %>
+        <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+        <% end %>
 		</nav>
 	</header>
 
@@ -34,7 +37,7 @@
   <% elsif alert %>
   <p class="alert"><%= alert %></p>
   <% end %>
-  
+
   <!-- All content from other views renders below -->
   <%= yield %>
 

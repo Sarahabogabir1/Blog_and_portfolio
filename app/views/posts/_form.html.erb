@@ -1,27 +1,25 @@
 <%= form_for @post do |f| %>
-  <% if @post.errors.any? %>
-  <!-- This shows the number of errors, if plural it will say the number of errors -->
-    <h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving: </h2>
-    <ul>
-      <%= @post.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-        <% end %>
-    </ul>
-  <% end %>
-  
-  <%= f.label :title %> <br>
-  <%= f.text_field :title %>
+	<% if @post.errors.any? %>
+		<h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving:</h2>
+		<ul>
+			<% @post.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+			<% end %>
+		</ul>
+	<% end %>
 
-  <br>
-  <br>
+	<%= f.label :title %><br>
+	<%= f.text_field :title %>
 
-  <%= f.label :content, "Write your article here" %>
-  <br>
-  <%= f.text_field :content %>
+	<br>
+	<br>
 
-  <br>
-  <br>
+	<%= f.label :content, "Write your article here" %><br>
+	<%= f.text_area :content %>
 
-  <%= f.submit %>
+	<br>
+	<br>
+
+	<%= f.submit %>
 
 <% end %>
