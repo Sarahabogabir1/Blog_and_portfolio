@@ -13,4 +13,10 @@ class ContactsController < ApplicationController
       render :new
     end
 	end
+
+	def update
+	end
+
 end
+
+private 
