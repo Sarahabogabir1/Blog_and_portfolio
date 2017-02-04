@@ -14,8 +14,8 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
+<body>
   <header id="main_navigation" class="clearfix">
     <%= link_to "Sarah Abogabir", root_path, class:"name" %>
 		<nav>
@@ -28,6 +28,13 @@
 		</nav>
 	</header>
 
+  <!-- Devise: will only show up if there is an alert-->
+  <% if notice %>
+  <p class="notice"><%= notice %></p>
+  <% elsif alert %>
+  <p class="alert"><%= alert %></p>
+  <% end %>
+  
   <!-- All content from other views renders below -->
   <%= yield %>
 

@@ -18,6 +18,7 @@ gem 'will_paginate', '~>3.0.7'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass', '~> 4.7.0'
+gem 'devise', '~> 4.2'
 
 group :development, :test do
   gem 'byebug'

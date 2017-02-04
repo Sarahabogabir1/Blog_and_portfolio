@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # We don't need to add resources for welcome page since we only will need one of the resources
   resources :posts
   resources :projects
